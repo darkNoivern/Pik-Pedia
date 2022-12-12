@@ -85,7 +85,7 @@ const Shadows = () => {
     return (
         <>
 <section className="section">
-                <h2 className="section__title">Shady Plot</h2>
+                <h2 className="section__title">Shady Spades</h2>
                 <span className="section__subtitle">Recognise the Pokémons from their shadows</span>
 
                 <div className="container initial__container">

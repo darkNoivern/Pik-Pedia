@@ -1,6 +1,6 @@
 .table__head{
     color: var(--title-color);
-    font-size: var(--normal-font-size) !important;
+    font-size: var(--small-font-size) !important;
     margin-bottom: 2rem;
 }
 

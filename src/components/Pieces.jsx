@@ -86,8 +86,8 @@ const Piece = () => {
 
     return (
         <>
-            <section className="section">                
-            <h2 className="section__title">Bits & Pieces</h2>
+            <section className="section">
+                <h2 className="section__title">Diamond Pieces</h2>
                 <span className="section__subtitle">Recognise the Pokémons from their body parts</span>
 
                 <div className="container initial__container">
@@ -167,6 +167,9 @@ const Piece = () => {
                             }
                         </div>
                     </div>
+                <span className='tips__title'>**PokéTip &nbsp;:</span>
+                <br />
+                You can click on the other patches to reveal other parts of the Pokémon's body 
 
                 </div>
             </section>

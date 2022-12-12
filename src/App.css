@@ -1476,3 +1476,8 @@ button {
   justify-content: center !important;
   align-items: center;
 }
+
+.services__icon{
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}

@@ -38,7 +38,7 @@ const Leaderboard = () => {
         <>
             <section className="section">
                 <h2 className="section__title">Leaderboard</h2>
-                <span className="section__subtitle less__margin__subtitle">Leaderboard of all Players here</span>
+                <span className="section__subtitle less__margin__subtitle">Complete against the world</span>
 
                 <div className="flexy">
 

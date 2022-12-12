@@ -13,8 +13,8 @@ const Home = () => {
                     <div>
                         <div className="services__content home__content">
                             <div>
-                                <i className="uil uil-moon services__icon"></i>
-                                <h3 className="services__title">Shady<br /> Plot</h3>
+                                <i className="uil uil-spade services__icon"></i>
+                                <h3 className="services__title">Shady<br /> Spades</h3>
                             </div>
                             <Link
                                 to={`/shadows`}
@@ -29,8 +29,8 @@ const Home = () => {
                     <div>
                         <div className="services__content home__content">
                             <div>
-                                <i className="uil uil-puzzle-piece services__icon"></i>
-                                <h3 className="services__title">Bits &<br /> Pieces</h3>
+                                <i className="uil uil-diamond services__icon"></i>
+                                <h3 className="services__title">Diamond<br /> Pieces</h3>
                             </div>
                             <Link
                                 to={`/pieces`}

@@ -31,3 +31,8 @@
 .piece__content{
     padding: 1.5rem 0;
 }
+
+.tips__title{
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+}
