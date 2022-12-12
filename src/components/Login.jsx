@@ -114,7 +114,7 @@ const Login = () => {
             .then((result) => {
                 // Signed in 
                 const user = result.user;
-                navigate("/notebooks");
+                navigate("/");
                 // ...
             })
             .catch((error) => {
