@@ -664,7 +664,7 @@ img {
 }
 
 .services__content {
-  width: 25rem;
+  /* width: 25rem; */
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;

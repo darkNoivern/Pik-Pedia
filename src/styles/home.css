@@ -1,11 +1,11 @@
 .card{
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 25rem;
+    width: min(25rem, 95vw);
 }
 
 .pokemon__name-input{
-    min-width: 17rem;
+    width: 100%;
     margin-right: 1rem;
 }
 
