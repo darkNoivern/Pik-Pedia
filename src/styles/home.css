@@ -1,0 +1,22 @@
+.card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+}
+
+.pokemon__name-input{
+    min-width: 17rem;
+    margin-right: 1rem;
+}
+
+.mbb2{
+    margin-bottom: 2rem;
+}
+
+.loader__img{
+    filter: brightness(0%);
+}
+
+.verdict{
+    font-size: var(--h2-font-size);
+}

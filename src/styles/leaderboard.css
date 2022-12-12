@@ -1,0 +1,27 @@
+.table__head{
+    color: var(--title-color);
+    font-size: var(--normal-font-size) !important;
+    margin-bottom: 2rem;
+}
+
+tbody{
+    color: car(--text-color);
+}
+
+.leaderboard-table{
+    /* max-width: 95vw; */
+    background-color: var(--container-color);
+    padding: 1rem;
+    border: 1px solid var(--title-color);
+}
+.text-center{
+    text-align: center;
+}
+
+.grid4{
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.user__table{
+    margin-bottom: 1rem;
+}
