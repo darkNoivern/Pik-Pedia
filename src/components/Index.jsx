@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import Pieces from './Pieces';
 import Shadows from './Shadows';
+import Error from './Error';
 
 const Index = () => {
     
@@ -20,8 +21,9 @@ const Index = () => {
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/leaderboard" element={currentUser ? <Leaderboard /> : <Login />} />
                     <Route exact path='/login' element={<Login />} />
-                    <Route exact path='/pieces' element={<Pieces />} />
-                    <Route exact path='/shadows' element={<Shadows />} />
+                    <Route exact path='/pieces' element={currentUser ? <Pieces /> : <Login />} />
+                    <Route exact path='/shadows' element={currentUser ? <Shadows /> : <Login />} />
+                    <Route path= '*' element={<Error />} />
                 </Routes>
             </Router>
         </>
