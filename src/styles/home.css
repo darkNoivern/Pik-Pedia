@@ -20,3 +20,7 @@
 .verdict{
     font-size: var(--h2-font-size);
 }
+
+.home__content{
+    padding: 5rem 1.5rem 1.5rem;
+}

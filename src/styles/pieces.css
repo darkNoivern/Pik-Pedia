@@ -1,0 +1,33 @@
+.grid24 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.disno{
+    width: calc(calc(min(25rem, 95vw) - 3rem) / 2);
+    height: calc(min(25rem, 95vw) / 2);
+    background-color: var(--container-color);
+    /* opacity: 0; */
+}
+
+#grid1 {
+    opacity: 0;
+}
+
+.bgset{
+    background-image: url("https://serebii.net/pokemon/art/025.png");
+    background-size: contain;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.front {
+    width: calc(min(25rem, 95vw) - 3rem);
+    height: min(25rem, 95vw);
+    max-width: 768px;
+}
+
+.piece__content{
+    padding: 1.5rem 0;
+}

@@ -64,17 +64,6 @@ const Navbar = () => {
                             </NavLink>
                         </li>
 
-                        {/* <li className="nav__item">
-                            <NavLink
-                                onClick={() => { linkAction(); }}
-                                activeClass="active"
-                                exact
-                                to="/layout"
-                                className="nav__link">
-                                <i class="uil uil-pizza-slice nav__icon"></i>Layout
-                            </NavLink>
-                        </li> */}
-                        
                         {
                             currentUser === null ?
 
