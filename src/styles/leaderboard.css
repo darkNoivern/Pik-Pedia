@@ -9,7 +9,7 @@ tbody{
 }
 
 .leaderboard-table{
-    /* max-width: 95vw; */
+    max-width: 95vw;
     background-color: var(--container-color);
     padding: 1rem;
     border: 1px solid var(--title-color);
@@ -19,6 +19,7 @@ tbody{
 }
 
 .grid4{
+    gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr) !important;
 }
 
