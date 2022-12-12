@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+## PikáPedia insights
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the project directory, you can play 2 kinds of games and have fun in our busy schedule
 
-## Available Scripts
+### `axios error handling`
 
-In the project directory, you can run:
+Error handling when you are using axios[link](https://axios-http.com/docs/handling_errors).
 
-### `npm start`
+### `changing backgroundImage using js`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dynamically changing backgroundImage with sprite id[link](https://holycoders.com/set-background-image-react-js/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `showing images in pieces`
 
-### `npm test`
+You can set the image to a div as background image and then use 4 square-grids for covering it's picture and make the opacity: 0, where ever required [link](https://stackoverflow.com/questions/19561585/how-to-make-div-go-behind-another-div)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `custom sort used in leaderboard`
 
-### `npm run build`
+[Custom sort documentation](https://www.tutorialspoint.com/how-to-define-custom-sort-function-in-javascript)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `increment operation in firestore`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Instead of deriving the whole database to just increment a number we can easily do so using the increment operation. Follow the given links to know more [firebase documentation](https://firebase.google.com/docs/firestore/manage-data/add-data?utm_source=cloud.google.com&utm_medium=referral)
+and [examples](https://fireship.io/snippets/firestore-increment-tips/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `upto 2 places of decimal`
 
-### `npm run eject`
+[Link](https://stackoverflow.com/questions/3163070/javascript-displaying-a-float-to-2-decimal-places)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `onLoad in images`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Images have a property called onLoad. [Description](https://medium.com/programming-essentials/how-to-detect-when-all-images-are-loaded-in-a-react-component-d831d0c675b2)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `generating random numbers`
+[Link](https://www.w3schools.com/JS/js_random.asp#:~:text=JavaScript%20Random%201%20Math.random%20%28%29%20Math.random%20%28%29%20returns,to%20use%20for%20all%20random%20integer%20purposes.%20)
