@@ -29,6 +29,8 @@ const Piece = () => {
     const [show, setShow] = useState(true);
     const [typed, setTyped] = useState("");
 
+    const [error, setError] = useState(false);
+
     async function getData(num) {
         setLoading(true);
         let pokeData = await axios.get(
@@ -89,7 +91,23 @@ const Piece = () => {
             <section className="section">
                 <h2 className="section__title">Diamond Pieces</h2>
                 <span className="section__subtitle">Recognise the Pokémons from their body parts</span>
-
+                {
+                    error &&
+                    <div className="services__modal">
+                        <div className="services__modal-content login__error__modal-content">
+                            <h4 className="services__modal-title">PikáPedia <br /> Guidelines</h4>
+                            <i
+                                onClick={() => {
+                                    setError(false);
+                                }}
+                                className="uil uil-times services__modal-close">
+                            </i>
+                            <div>
+                                Extremely sorry for disturbance !! Please Close the modal and press start button again !! Piká 
+                            </div>
+                        </div>
+                    </div>
+                }
                 <div className="container initial__container">
                     <div className='flexy'>
                         {

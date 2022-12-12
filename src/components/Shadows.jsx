@@ -19,7 +19,7 @@ import Loader from './Loader'
 import { AuthContext } from '../context/AuthContext'
 
 const Shadows = () => {
-    
+
     const { currentUser } = useContext(AuthContext)
 
 
@@ -30,11 +30,15 @@ const Shadows = () => {
     const [show, setShow] = useState(true);
     const [typed, setTyped] = useState("");
 
+    const [error, setError] = useState(false);
+
     async function getData(num) {
         setLoading(true);
         let pokeData = await axios.get(
             `https://pokeapi.co/api/v2/pokemon/${num}/`
-        );
+        ).catch(function (error) {
+            setError(true)
+        });
         setName(pokeData.data.name)
         setLoading(false);
         setSurrender(true);
@@ -60,23 +64,23 @@ const Shadows = () => {
 
     const onSurrender = () => {
         const userRef = doc(db, `users/${currentUser.uid}`);
-        updateDoc(userRef,{ attempted: increment(1) });
+        updateDoc(userRef, { attempted: increment(1) });
         setSurrender(false);
         setShow(true);
         setTyped("");
     }
 
     const submit = (event) => {
-        
+
         event.preventDefault();
-        
+
         const userRef = doc(db, `users/${currentUser.uid}`);
-        updateDoc(userRef,{ attempted: increment(1) });
-        if(typed===name){
-            updateDoc(userRef,{ accepted: increment(1) });
+        updateDoc(userRef, { attempted: increment(1) });
+        if (typed === name) {
+            updateDoc(userRef, { accepted: increment(1) });
         }
 
-        setTyped(""); 
+        setTyped("");
         setShow(true)
         setSurrender(false)
     }
@@ -84,10 +88,27 @@ const Shadows = () => {
 
     return (
         <>
-<section className="section">
+            <section className="section">
                 <h2 className="section__title">Shady Spades</h2>
                 <span className="section__subtitle">Recognise the Pokémons from their shadows</span>
-
+                
+                {
+                    error &&
+                    <div className="services__modal">
+                        <div className="services__modal-content login__error__modal-content">
+                            <h4 className="services__modal-title">PikáPedia <br /> Guidelines</h4>
+                            <i
+                                onClick={() => {
+                                    setError(false);
+                                }}
+                                className="uil uil-times services__modal-close">
+                            </i>
+                            <div>
+                                Extremely sorry for disturbance !! Please Close the modal and press start button again !! Piká
+                            </div>
+                        </div>
+                    </div>
+                }
                 <div className="container initial__container">
                     <div className='flexy'>
                         {
@@ -115,14 +136,14 @@ const Shadows = () => {
                                             show ?
                                                 <>
                                                     <div className="services__content flexy piece__content mbb2">
-                                                    <div className="front flexy">
+                                                        <div className="front flexy">
 
-                                                        <img
-                                                            loading='lazy'
-                                                            className='sup__img'
-                                                            src={`https://serebii.net/pokemon/art/${sprite}.png`}
-                                                            alt="pokemon.png" />
-                                                    </div>
+                                                            <img
+                                                                loading='lazy'
+                                                                className='sup__img'
+                                                                src={`https://serebii.net/pokemon/art/${sprite}.png`}
+                                                                alt="pokemon.png" />
+                                                        </div>
                                                     </div>
                                                     <div className='flexy verdict'>
                                                         {name.charAt(0).toUpperCase() + name.slice(1)}
