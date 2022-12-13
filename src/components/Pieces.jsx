@@ -35,7 +35,9 @@ const Piece = () => {
         setLoading(true);
         let pokeData = await axios.get(
             `https://pokeapi.co/api/v2/pokemon/${num}/`
-        );
+        ).catch(function (error) {
+            setError(true)
+        });
         setName(pokeData.data.name)
         setLoading(false);
         setSurrender(true);
