@@ -88,7 +88,6 @@ const Login = () => {
                     email,
                     attempted: 0,
                     accepted: 0,
-                    accuracy: 0.0,
                 });
 
                 navigate("/");
